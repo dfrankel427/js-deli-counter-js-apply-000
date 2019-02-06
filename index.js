@@ -10,11 +10,3 @@ function nowServing (katzDeliLine){
   if (katzDeliLine.length > 0) {return (`Currently serving ${firstPersonInLine}.`)
 	}
 }
-
-function currentLine(katzDeliLine){
-   	if (katzDeliLine.length === 0) {return "The line is currently empty."}
-for(var i=0; i<katzDeliLine.length; i++){
-      "The Line is currently" += (i + 1) + ". " + katzDeliLine[i] + ", ";
-    }
-    return katzDeliLine.slice(0, katzDeliLine.length-2);
-}
